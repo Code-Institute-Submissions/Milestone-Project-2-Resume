@@ -13,9 +13,9 @@
     <title>Resume</title>
   </head>
 
-  <body class="body-style">
+  <body class="body-style d-flex flex-column min-vh-100">
     <header>
-      <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
         <button
           class="navbar-toggler"
           type="button"
@@ -31,7 +31,7 @@
           <a class="navbar-brand" href="index.html"
             >Joe-Louis D'Santos <br />Full Stack Web Developer</a
           >
-          <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+          <ul class="navbar-nav ml-auto mt-2 mt-lg-0 item-colors">
             <li class="nav-item active">
               <a class="nav-link" href="index.html"
                 >Home <span class="sr-only">(current)</span></a
@@ -39,7 +39,7 @@
             </li>
             <li class="nav-item">
               <a class="nav-link" href="contact.html"
-                >Conatct <span class="sr-only">(current)</span></a
+                >Contact <span class="sr-only">(current)</span></a
               >
             </li>
             <li class="nav-item">
@@ -57,9 +57,9 @@
       </nav>
     </header>
     <section>
-      <div class="justify-content-around">
+      <div class="container-fluid justify-content-around">
         <div class="row no-gutters">
-          <div class="col-lg-4 about-style">
+          <div class="col-lg-4 col-md-6 pr-md-2 pt-md-4 order-lg-first text-justify about-style">
             <h5><u>About Me</u></h5>
             <br />
             <p>
@@ -73,11 +73,11 @@
               Nulla hendrerit eu ex tempus eleifend.
             </p>
           </div>
-          <div class="col-lg-4 align-self-center image-style">
+          <div class="col-lg-4 order-first align-self-center image-style">
             <img src="..images/SuitPic.jpg" alt="" />
           </div>
-          <div class="col-lg-4 about-style">
-            <h5><u>Resume</u></h5>
+          <div class="col-lg-4 col-md-6 pl-md-2 pt-md-4 order-md-last text-justify about-style">
+            <h5><u>Resume</u></h5> 
             <br />
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit
@@ -93,7 +93,7 @@
         </div>
       </div>
     </section>
-    <footer class="footer">
+    <footer class="footer-style mt-auto">
     <ul class="nav justify-content-center bg-dark">
         <li class="nav-item">
           <a class="nav-link" href="https://www.facebook.com/" target="_blank"
