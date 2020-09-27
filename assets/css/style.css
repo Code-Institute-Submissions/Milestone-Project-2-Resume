@@ -1,3 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+
 .body-style {
     background-color: grey;
+}
+
+.about-style {
+    color: #fff;
+    padding-top: 50px;
+    text-align: center;
+}
+
+.image-style {
+    text-align: center;
+    padding-top: 50px;
+}
+
+.image-style img {
+    border: 1px solid black;
+    border-radius: 180%;
+    width: 175px;
+    height: 175px;
 }
