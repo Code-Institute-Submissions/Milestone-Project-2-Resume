@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
 
-/*--------Styles--------*/
+/*--------Styles/paddings/margins--------*/
 
 .body-style {
-    background-color: grey;
+  background-color: grey;
 }
 
 body {
@@ -15,6 +15,14 @@ body {
   }
 }
 
+.section-padding {
+  padding-top: 70px;
+}
+
+.form-padding {
+  padding-top: 20px;
+}
+
 /*-------Footer-------*/
 
 footer ul li a i {
@@ -23,27 +31,35 @@ footer ul li a i {
 }
 
 .footer-style {
-    width: 100%;
-    line-height: 60px;
-    background-color: #343a40!important;
+  width: 100%;
+  line-height: 60px;
+  background-color: #343a40 !important;
 }
 
 /*-------Home Main-------*/
 
 .about-style {
-    color: #fff;
-    padding-top: 50px;
+  color: #fff;
+  padding-top: 50px;
 }
 
 .image-style {
-    text-align: center;
-    padding-top: 100px;
+  text-align: center;
+  padding-top: 100px;
 }
 
 .image-style img {
-    background-repeat: no-repeat;
-    border: 1px solid black;
-    border-radius: 180%;
-    width: 175px;
-    height: 175px;
+  background-repeat: no-repeat;
+  border: 1px solid black;
+  border-radius: 180%;
+  width: 175px;
+  height: 175px;
+}
+
+/*--------Contact Form--------*/
+
+.form-styles {
+  background: #343a40 !important;
+  border: 1px solid transparent;
+  border-radius: 5px;
 }
