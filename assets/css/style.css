@@ -41,7 +41,7 @@ body {
 
 .image-style img {
   background-repeat: no-repeat;
-  border: 1px solid black;
+  border: 1px solid orange;
   border-radius: 180%;
   width: 175px;
   height: 175px;
