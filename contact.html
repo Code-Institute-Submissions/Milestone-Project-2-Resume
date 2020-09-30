@@ -11,6 +11,15 @@
       crossorigin="anonymous"
     />
     <title>Resume</title>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("user_rQpcxeUqWm6JgYS1ONcbA");
+      })();
+    </script>
   </head>
 
   <body class="body-style d-flex flex-column min-vh-100">
@@ -56,38 +65,40 @@
         </div>
       </nav>
     </header>
-    <section class="section-padding">
+    <section>
       <div
         class="row no-gutters container-fluid justify-content-center form-padding"
       >
-        <form class="col-md-8 p-5 form-styles">
+        <form
+          class="col-md-8 p-5 form-styles"
+          onsubmit="return sendMail(this);"
+        >
           <div>
             <div>
-              <input
-                type="text"
-                class="form-control"
-                placeholder="First name"
-              />
-            </div>
-            <div>
-              <input type="text" class="form-control" placeholder="Last name" />
+              <input type="text" name="name" class="form-control" id="fullname" placeholder="Name" required/>
             </div>
           </div>
           <div class="text-white form-group">
-            <label for="exampleFormControlInput1">Email address</label>
+            <label for="emailaddress">Email address</label>
             <input
-              type="email"
+              type="text"
+              name="emailaddress"
               class="form-control"
-              id="exampleFormControlInput1"
+              id="emailaddress"
               placeholder="name@example.com"
+              required
             />
           </div>
           <div class="text-white form-group">
-            <label for="exampleFormControlTextarea1">Example textarea</label>
+            <label for="projectsummary"
+              >Description of enquiry</label
+            >
             <textarea
               class="form-control"
-              id="exampleFormControlTextarea1"
+              id="projectsummary"
+              name="projectsummary"
               rows="3"
+              required
             ></textarea>
           </div>
           <div class="pb-3">
@@ -96,6 +107,7 @@
         </form>
       </div>
     </section>
+    <br />
     <footer class="footer-style mt-auto">
       <ul class="nav justify-content-center bg-dark">
         <li class="nav-item">
@@ -120,6 +132,7 @@
         </li>
       </ul>
     </footer>
+    <script src="assets/js/sendEmail.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
