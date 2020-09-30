@@ -16,24 +16,15 @@ body {
 }
 
 .section-padding {
-  padding-top: 70px;
+  padding-top: 60px;
 }
 
 .form-padding {
-  padding-top: 20px;
+  padding-top: 40px;
 }
 
-/*-------Footer-------*/
-
-footer ul li a i {
-  text-decoration: none;
-  color: orange;
-}
-
-.footer-style {
-  width: 100%;
-  line-height: 60px;
-  background-color: #343a40 !important;
+.game-padding {
+  padding-top: 50px;
 }
 
 /*-------Home Main-------*/
@@ -62,4 +53,112 @@ footer ul li a i {
   background: #343a40 !important;
   border: 1px solid transparent;
   border-radius: 5px;
+}
+
+/*---------Game-----------*/
+
+#game {
+  width: 500px;
+  height: 200px;
+  border: 1px solid black;
+  background-color: #343a40 !important;
+  margin: auto;
+  margin-top: 50px;
+}
+
+#character {
+  width: 20px;
+  height: 50px;
+  background-color: orange;
+  position: relative;
+  top: 150px;
+}
+
+.animate {
+    animation: jump 500ms;
+}
+
+@keyframes jump {
+  0% {
+    top: 150px;
+  }
+  30% {
+    top: 100px;
+  }
+  70% {
+    top: 100px;
+  }
+  100% {
+      top: 150px;
+  }
+}
+
+#block {
+  width: 20px;
+  height: 20px;
+  background-color: blue;
+  position: relative;
+  left: 480px;
+  top: 130px;
+  animation: block 1s infinite linear;
+}
+
+@keyframes block {
+  0% {
+    left: 480px;
+  }
+
+  100% {
+     left: 0%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+
+#game {
+  width: 320px;
+  height: 200px;
+  border: 1px solid black;
+  background-color: #343a40 !important;
+  margin: auto;
+  margin-top: 50px;
+}
+
+    #block {
+  width: 20px;
+  height: 20px;
+  background-color: blue;
+  position: relative;
+  left: 300px;
+  top: 130px;
+  animation: block 1s infinite linear;
+}
+
+@keyframes block {
+  0% {
+    left: 300px;
+  }
+
+  100% {
+     left: 0%;
+  }
+}
+}
+
+/*-------Footer-------*/
+
+footer {
+    position: inherit;
+    bottom: 0;
+}
+
+footer ul li a i {
+  text-decoration: none;
+  color: orange;
+}
+
+.footer-style {
+  width: 100%;
+  line-height: 60px;
+  background-color: #343a40 !important;
 }
