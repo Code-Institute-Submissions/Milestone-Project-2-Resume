@@ -13,7 +13,7 @@
     <title>Resume</title>
   </head>
 
-  <body class="body-style d-flex flex-column min-vh-100">
+  <body class="body-style d-flex align-items-center flex-column min-vh-100">
     <header>
       <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
         <button
@@ -56,11 +56,11 @@
         </div>
       </nav>
     </header>
-    <section class="game-padding"   onclick="jump()">
+    <section class="game-position">
       <div>
-        <div id="game">
-          <div id="character"></div>
-          <div id="block"></div>
+        <div id="game-board">
+          <div class="snake"></div>
+          <div class="food"></div>
         </div>
       </div>
     </section>

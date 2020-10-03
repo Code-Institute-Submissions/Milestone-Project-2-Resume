@@ -1,4 +1,23 @@
-var character = document.getElementById("character");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*var character = document.getElementById("character");
 var block = document.getElementById("block");
 function jump() {
     if(character.classList != "animate"){
@@ -17,4 +36,5 @@ var checkDeath = setInterval(function(){
         block.style.display = "none";
         alert("Ouch!! Nice try!! Refresh and try again")
     } 
-},10);
+},10);*/
+
