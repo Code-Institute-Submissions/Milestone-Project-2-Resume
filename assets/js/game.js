@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   const squares = document.querySelectorAll(".grid div");
-  const scoreDisplay = document.querySelector("span");
+  const scoreDisplay = document.querySelector(".score");
   const startBtn = document.querySelector(".start");
 
   const width = 10;
@@ -51,11 +51,11 @@ document.addEventListener("DOMContentLoaded", () => {
       squares[currentSnake[0]].classList.remove("food");
       squares[tail].classList.add("snake");
       currentSnake.push(tail);
-      randomFood()
+      randomFood();
       score++;
       scoreDisplay.textContent = score;
       clearInterval(interval);
-      intervalTime = intervalTime + speed;
+      intervalTime = intervalTime * speed;
       intervalTime = setInterval(moveOutcomes, intervalTime);
     }
 
@@ -66,8 +66,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function randomFood() {
     do {
-      foodIndex = Math.floor(Math.random() + squares.length);
-    } while (squares[foodIndex].classList.contains("snake")); // makes sure food doesnt get put where snake is
+      foodIndex = Math.floor(Math.random() * squares.length);
+    } while (squares[foodIndex].classList.contains("snake")); // this makes sure food doesnt get put where snake is
     squares[foodIndex].classList.add("food");
   }
 
@@ -90,3 +90,7 @@ document.addEventListener("DOMContentLoaded", () => {
   document.addEventListener("keyup", control);
   startBtn.addEventListener("click", startGame);
 });
+function foodStart(randomFood) {
+    randomFood();
+}
+

@@ -15,10 +15,9 @@ body {
   }
 
   #game-position {
-      margin-top: 80px;
-      margin-bottom: 10px;
+    margin-top: 80px;
+    margin-bottom: 10px;
   }
-  
 }
 
 .section-padding {
@@ -81,21 +80,21 @@ body {
 }
 
 .food {
-  border: .25vmin solid black;
+  border: .25vim solid black;
   background-color: lime;
 }
 
 .score {
-    color: #fff;
-    font-size: 18px;
+  color: #fff;
+  font-size: 18px;
 }
 
 /*---------Footer--------*/
 
-footer { 
-    position: relative;
-    bottom: 0;
-    width: 100%;
+footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
 }
 
 footer ul li a i {
