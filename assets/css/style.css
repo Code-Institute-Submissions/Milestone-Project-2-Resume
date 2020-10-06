@@ -65,14 +65,14 @@ body {
 
 /*---------Game-----------*/
 
-#game-board {
+.grid {
   width: 50vmin;
   height: 50vmin;
   border: 1px solid black;
   background-color: #343a40 !important;
   display: grid;
-  grid-template-rows: repeat(21, 1fr);
-  grid-template-columns: repeat(21, 1fr);
+  grid-template-rows: repeat(10, 1fr);
+  grid-template-columns: repeat(10, 1fr);
 }
 
 .snake {
@@ -82,81 +82,15 @@ body {
 
 .food {
   border: .25vmin solid black;
-  background-color: blue;
+  background-color: lime;
 }
 
-/*.animate {
-    animation: jump 500ms;
+.score {
+    color: #fff;
+    font-size: 18px;
 }
 
-@keyframes jump {
-  0% {
-    top: 150px;
-  }
-  30% {
-    top: 100px;
-  }
-  70% {
-    top: 100px;
-  }
-  100% {
-      top: 150px;
-  }
-}
-
-#block {
-  width: 20px;
-  height: 20px;
-  background-color: blue;
-  position: relative;
-  left: 480px;
-  top: 130px;
-  animation: block 1s infinite linear;
-}
-
-@keyframes block {
-  0% {
-    left: 480px;
-  }
-
-  100% {
-     left: 0%;
-  }
-}
-
-@media screen and (max-width: 500px) {
-
-#game {
-  width: 320px;
-  height: 200px;
-  border: 1px solid black;
-  background-color: #343a40 !important;
-  margin: auto;
-  margin-top: 50px;
-}
-
-    #block {
-  width: 20px;
-  height: 20px;
-  background-color: blue;
-  position: relative;
-  left: 300px;
-  top: 130px;
-  animation: block 1s infinite linear;
-}
-
-@keyframes block {
-  0% {
-    left: 300px;
-  }
-
-  100% {
-     left: 0%;
-  }
-}
-}*/
-
-/*-------Footer-------*/
+/*---------Footer--------*/
 
 footer { 
     position: relative;
