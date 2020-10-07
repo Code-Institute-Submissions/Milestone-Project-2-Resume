@@ -1,3 +1,5 @@
+// This code was heavily influenced by a youtube tutorial by ania kubo
+
 document.addEventListener("DOMContentLoaded", () => {
   const squares = document.querySelectorAll(".grid div");
   const scoreDisplay = document.querySelector(".score");
@@ -73,24 +75,23 @@ document.addEventListener("DOMContentLoaded", () => {
 
   //functions for key codes
 
-  function keycode() {
+  function control(e) {
     squares[currentIndex].classList.remove("snake");
 
-    if (keycode === 68) {
-      direction = 1; // pressing right on keyboard, snake goes right
-    } else if (keycode === 87) {
-      direction = -width; // pressing up arrow, snake will go back 10 divs appearing to go up
-    } else if (keycode === 65) {
-      direction = -1; // if pressing left arrow, snake goes left
-    } else if (keycode === 83) {
-      direction = +width; // pressing the down arrow moves the snake 10 divs forward making it look like it goes down
+    if (e.keycode === 68) {
+      direction = 1; // pressing D on keyboard, snake goes right
+    } else if (e.keycode === 87) {
+      direction = -width; // pressing W, snake will go back 10 divs appearing to go up
+    } else if (e.keycode === 65) {
+      direction = -1; // if pressing A snake goes left
+    } else if (e.keycode === 83) {
+      direction = +width; // pressing S moves the snake 10 divs forward making it look like it goes down
     }
   }
 
-  document.addEventListener("keyup", keycode);
+  document.addEventListener("keyup", control);
   startBtn.addEventListener("click", startGame);
 });
 function foodStart(randomFood) {
-    randomFood();
+  randomFood();
 }
-
