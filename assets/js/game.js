@@ -73,21 +73,21 @@ document.addEventListener("DOMContentLoaded", () => {
 
   //functions for key codes
 
-  function control(e) {
+  function keycode() {
     squares[currentIndex].classList.remove("snake");
 
-    if (e.keycode === 39) {
+    if (keycode === 68) {
       direction = 1; // pressing right on keyboard, snake goes right
-    } else if (e.keycode === 38) {
+    } else if (keycode === 87) {
       direction = -width; // pressing up arrow, snake will go back 10 divs appearing to go up
-    } else if (e.keycode === 37) {
+    } else if (keycode === 65) {
       direction = -1; // if pressing left arrow, snake goes left
-    } else if (e.keycode === 40) {
+    } else if (keycode === 83) {
       direction = +width; // pressing the down arrow moves the snake 10 divs forward making it look like it goes down
     }
   }
 
-  document.addEventListener("keyup", control);
+  document.addEventListener("keyup", keycode);
   startBtn.addEventListener("click", startGame);
 });
 function foodStart(randomFood) {
