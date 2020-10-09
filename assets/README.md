@@ -1,6 +1,6 @@
 <h1 align="center">Resume Interactive Front End Project</h1>
 
-[View the live project here.](https://8000-c1df1e4c-db33-44bb-b3ae-96bba5f42cd0.ws-eu01.gitpod.io/game.html)
+[View the live project here.](https://joelouisdsantos.github.io/Milestone-Project-2-Resume/)
 
 This is a unique resume page. Design to perk potential employers interests.
 
