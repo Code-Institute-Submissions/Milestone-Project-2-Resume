@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", () => {
       scoreDisplay.textContent = score;
       clearInterval(interval);
       intervalTime = intervalTime * speed;
-      intervalTime = setInterval(moveOutcomes, intervalTime);
+      interval = setInterval(moveOutcomes, intervalTime);
     }
 
     squares[currentSnake[0]].classList.add("snake");
@@ -78,13 +78,13 @@ document.addEventListener("DOMContentLoaded", () => {
   function control(e) {
     squares[currentIndex].classList.remove("snake");
 
-    if (e.keycode === 68) {
+    if (e.keyCode === 68) {
       direction = 1; // pressing D on keyboard, snake goes right
-    } else if (e.keycode === 87) {
+    } else if (e.keyCode === 87) {
       direction = -width; // pressing W, snake will go back 10 divs appearing to go up
-    } else if (e.keycode === 65) {
+    } else if (e.keyCode === 65) {
       direction = -1; // if pressing A snake goes left
-    } else if (e.keycode === 83) {
+    } else if (e.keyCode === 83) {
       direction = +width; // pressing S moves the snake 10 divs forward making it look like it goes down
     }
   }

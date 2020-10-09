@@ -93,6 +93,13 @@ body {
   font-size: 18px;
 }
 
+.game-text  {
+    color: white;
+    text-align: center;
+    width: 250px;
+    font-size: 14px;
+    margin-top: 10px;
+}
 /*---------Footer--------*/
 
 footer {
